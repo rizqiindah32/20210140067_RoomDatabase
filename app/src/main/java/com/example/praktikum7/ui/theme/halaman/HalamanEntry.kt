@@ -16,11 +16,22 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.KeyboardType
+import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.praktikum7.R
 import com.example.praktikum7.model.DetailSiswa
+import com.example.praktikum7.model.EntryViewmodel
+import com.example.praktikum7.model.PenyediaViewModel
 import com.example.praktikum7.model.UIStateSiswa
 
-
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+fun EntrySiswaScreen(
+    navigateBack: () -> Unit,
+    modifier: Modifier = Modifier,
+    viewmodel: EntryViewmodel = viewModel(factory = PenyediaViewModel.Factory)
+){
+    
+}
 @Composable
 fun EntrySiswaBody(
     uiStateSiswa: UIStateSiswa,
