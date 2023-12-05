@@ -26,6 +26,12 @@ fun EntrySiswaBody(
     onSaveClick: () -> Unit,
     modifier: Modifier
 ){
+    Column (
+        verticalArrangement = Arrangement.spacedBy(dimensionResource(id = R.dimen.padding_large)),
+        modifier = modifier.padding(dimensionResource(id = R.dimen.padding_medium))
+    ){
+        
+    }
 
 }
 @OptIn(ExperimentalMaterial3Api::class)
