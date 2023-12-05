@@ -43,7 +43,7 @@ fun EntrySiswaBody(
             shape = MaterialTheme.shapes.small,
             modifier = Modifier.fillMaxWidth()
             ) {
-
+            Text(stringResource(R.string.btn_submit))
         }
     }
 
