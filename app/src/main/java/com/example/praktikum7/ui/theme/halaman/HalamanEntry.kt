@@ -29,7 +29,14 @@ import com.example.praktikum7.model.DetailSiswa
 import com.example.praktikum7.model.EntryViewmodel
 import com.example.praktikum7.model.PenyediaViewModel
 import com.example.praktikum7.model.UIStateSiswa
+import com.example.praktikum7.navigasi.DestinasiNavigasi
+import com.example.praktikum7.navigasi.SiswaTopAppBar
 import kotlinx.coroutines.launch
+
+object DestinasiEntry: DestinasiNavigasi{
+    override val route = "item_entry"
+    override val titleRes = R.string.entry_siswa
+}
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
