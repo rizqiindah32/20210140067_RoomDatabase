@@ -17,6 +17,13 @@ import androidx.compose.ui.unit.dp
 import com.example.praktikum7.data.Siswa
 
 @Composable
+fun ListSiswa(
+    itemSiswa: List<Siswa>,
+    modifier: Modifier=Modifier
+){
+    
+}
+@Composable
 fun DataSiswa(
     siswa: Siswa,
     modifier: Modifier = Modifier
