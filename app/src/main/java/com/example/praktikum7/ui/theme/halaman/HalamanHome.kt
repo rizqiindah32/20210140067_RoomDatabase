@@ -3,7 +3,10 @@ package com.example.praktikum7.ui.theme.halaman
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Phone
 import androidx.compose.material3.Card
@@ -13,7 +16,9 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.unit.dp
+import com.example.praktikum7.R
 import com.example.praktikum7.data.Siswa
 
 @Composable
@@ -21,7 +26,15 @@ fun ListSiswa(
     itemSiswa: List<Siswa>,
     modifier: Modifier=Modifier
 ){
-    
+    LazyColumn(modifier = Modifier){
+        items(items = itemSiswa, key ={it.id}){
+                person ->
+            DataSiswa(
+                siswa = person,
+                modifier = Modifier.padding(dimensionResource(id = R.dimen.padding_small))
+            )
+        }
+    }
 }
 @Composable
 fun DataSiswa(
