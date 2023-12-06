@@ -22,6 +22,13 @@ import com.example.praktikum7.R
 import com.example.praktikum7.data.Siswa
 
 @Composable
+fun BodyHome(
+    itemSiswa: List<Siswa>,
+    modifier: Modifier= Modifier
+){
+    
+}
+@Composable
 fun ListSiswa(
     itemSiswa: List<Siswa>,
     modifier: Modifier=Modifier
